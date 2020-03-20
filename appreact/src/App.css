@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #888;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a {
+  color: #888;
+}
+a:hover {
+  color: red;
+}
+
+h1 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
+}
+
+article.movie-element {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0 10px #9e9e9e;
+}
+
+article .movie-text {
+  padding: 1em;
+}
+
+article h5 {
+  margin-top: 1em;
+}
+
+article .movie-text div {
+  margin: 1em 0;
+}
+
+button.like {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  background-color: #bdbdbd;
+  padding: 5px 10px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+button.wishlist {
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  background-color: #bdbdbd;
+  padding: 5px 12px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+button.watch {
+  border: none;
+  background: none;
+}
+
+button:focus {outline:0;}
+
+svg:hover {
+  cursor: pointer;
+}
+
+button.plus, button.moins {
+  border: none;
+  background-color: #202429;
+  color: #fff;
+  margin: 1px;
+  font-size: 17px;
+  line-height: 17px;
+  width: 25px;
+  height: 25px;
+}
+button.plus:hover, button.moins:hover {
+  background-color: #ffc861;
+}
+/* button.like:hover {
+  background-color: #ff5826 !important;
+} */
+
+.nav-item .wishlist {
+  width: 300px;
+}
+.wish-element {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  flex-direction: row;
+  align-items: center;
+}
+.wish-element img {
+  margin-right: 10px;
+}
+.movie-element img {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
